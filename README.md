@@ -6,7 +6,7 @@ An interactive prototype for reviewing product work and turning feedback into sp
 
 The prototype explores how an AI reviewer should present its assessment: the overall result, the reasoning behind it, the relevant part of the submission, and what the user can do next.
 
-Built by [Gagan Gehani](https://github.com/GG100-eng). The interactive frontend uses predefined scenarios to explore the review rubric, feedback hierarchy and revision workflow.
+I’m [Gagan Gehani](https://github.com/GG100-eng). I built this frontend to work through how a reviewer should explain a score and help someone revise their work. The demo runs on predefined scenarios.
 
 ## The product question
 
