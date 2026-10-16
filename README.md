@@ -6,7 +6,7 @@ An interactive prototype for reviewing product work and turning feedback into sp
 
 The prototype explores how an AI reviewer should present its assessment: the overall result, the reasoning behind it, the relevant part of the submission, and what the user can do next.
 
-**Current stage:** a frontend prototype with predefined scenarios, scores and feedback. It does not run live document analysis or model inference.
+Built by [Gagan Gehani](https://github.com/GG100-eng). The interactive frontend uses predefined scenarios to explore the review rubric, feedback hierarchy and revision workflow.
 
 ## The product question
 
@@ -35,13 +35,13 @@ The playback sequence also links feedback to sections of the sample document. Th
 | Multiple outcome states | A way to inspect feedback for strong, weak, inaccessible and incomplete submissions |
 | Questions about assumptions | An interaction for asking the user to explain the reasoning behind their work |
 
-## Current scope
+## How the demo works
 
 Scores, verdicts, rationales and fixes come from scenario data in the frontend. Category filtering, rationale expansion, scenario switching and timeline interactions run in the browser.
 
-The **Generate fix-list** control currently demonstrates a loading state. Document access checks, AI-generated reviews, score calibration and backend modules mentioned in the developer overlay are not implemented in this repository.
+The **Generate fix-list** control demonstrates a loading state. Live document analysis, model inference and score calibration are future integration work.
 
-## What needs validation
+## Evaluation direction
 
 The next product work is to test whether the feedback helps someone produce a better revision.
 
@@ -51,7 +51,7 @@ The next product work is to test whether the feedback helps someone produce a be
 - **User control:** let someone challenge a critique, add context and see what changed in the review.
 - **Usefulness:** compare the revised work against the original using the same rubric.
 
-The percentages and hireability verdicts in the demo are illustrative. They have not been validated as measures of job readiness. There are no published model-evaluation or user-study results yet.
+The percentages and hireability verdicts are illustrative scenario data. The evaluation above is the proposed next step.
 
 ## Implementation
 
