@@ -28,6 +28,6 @@ The prototype uses predefined scenario data and needs no model API key. Demo med
 - `src/components/RadarChart.tsx`: interactive category chart.
 - `src/app/globals.css`: application styles.
 
-The nested `zero-education-platform/` directory contains another copy of the prototype. The commands above run the app in this directory.
+The nested `prototype-copy/` directory contains another copy of the prototype. The commands above run the app in this directory.
 
 See the [project overview](../README.md) for the product scope and validation questions.

@@ -568,7 +568,7 @@ function InsufficientDepthOverlay({ onDismiss }: { onDismiss: () => void }) {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-red-400">✗</span>
-                  <span>Cited sources (you provided zero)</span>
+                  <span>Cited sources (none provided)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-red-400">✗</span>
@@ -651,7 +651,7 @@ function AccessDeniedModal({ onClose }: { onClose: () => void }) {
               "Open your document in Figma, Google Docs, or Notion",
               "Click the 'Share' button in the top-right corner",
               "Change permissions to 'Anyone with the link' can view",
-              "Re-submit your document link to Zero"
+              "Re-submit your document link to AI Manager"
             ].map((step, i) => (
               <li key={`step-${i}`} className="flex items-start gap-3">
                 <span className="flex-shrink-0 w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs font-bold">
@@ -1474,7 +1474,7 @@ function XPBadgeIcon({ className }: { className?: string }) {
   return (
     <div className={`${className} relative`}>
       <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-400 via-yellow-500 to-orange-500 shadow-lg flex items-center justify-center transform rotate-3 border border-yellow-300/50">
-        {/* Zero University XP Sparkle Icon */}
+        {/* XP Sparkle Icon */}
         <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
         </svg>
@@ -2139,11 +2139,11 @@ export default function Home() {
           </button>
 
           <h1 className="text-2xl font-bold tracking-tight text-gray-900" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-            zero
+            AI Manager
           </h1>
 
           <div className="flex items-center gap-2 glass-card rounded-full px-4 py-2">
-            {/* Zero University XP Sparkle Icon */}
+            {/* XP Sparkle Icon */}
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none">
               <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="url(#xpGradient)" />
               <defs>
@@ -2440,13 +2440,13 @@ export default function Home() {
             </>
           )}
 
-          {/* XP Footer - Continuity with Zero product */}
+          {/* XP Footer */}
           {scenario.id !== "access-denied" && scenario.id !== "insufficient-depth" && (
             <div className="mt-8 flex justify-center">
               <div className="glass-card rounded-2xl px-8 py-4">
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center shadow-md">
-                    {/* Zero University XP Sparkle Icon */}
+                    {/* XP Sparkle Icon */}
                     <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
                     </svg>
